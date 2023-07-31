@@ -1,8 +1,8 @@
 
 import RootLayout from "@/components/layout/RootLayout";
 import Banner from "@/components/ui/Banner";
+import FeaturedCategories from "@/components/ui/FeaturedCategories";
 import FeaturedProducts from "@/components/ui/FeaturedProducts";
-// import FeaturedCategories from "@/components/ui/FeaturedCategories";
 import Footer from "@/components/ui/Footer";
 import Heading from "@/components/ui/Heading";
 import Navbar from "@/components/ui/Navbar";
@@ -15,8 +15,9 @@ const Home = ({ products }) => {
   return (
     <div>
       <Heading title={"Home"} />
-      <Banner />
+      <Banner></Banner>
       <FeaturedProducts products={products}></FeaturedProducts>
+      <FeaturedCategories></FeaturedCategories>
     </div>
   );
 };
