@@ -19,7 +19,16 @@ const LoginPage = () => {
         >
           Sign In with GitHub
         </button>
-
+        <button
+          className="bg-gray-800 mt-4 hover:bg-gray-900 text-white px-4 py-2 rounded-md"
+          onClick={() =>
+            signIn("google", {
+              callbackUrl: "http://localhost:3000/",
+            })
+          }
+        >
+          Sign In with Google
+        </button>
       </div>
     </>
   );
