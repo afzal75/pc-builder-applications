@@ -27,7 +27,8 @@ Home.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/products");
+
+  const res = await fetch("https://pc-builder-applications.vercel.app/api/products");
   const data = await res.json();
   
   // Randomly select 6 products
@@ -85,7 +86,7 @@ export default Home;
 
 
 // export const getStaticProps = async () => {
-//   const res = await fetch("http://localhost:3000/products");
+//   const res = await fetch("https://pc-builder-applications.vercel.app/products");
 //   const data = await res.json();
 //   console.log(data)
 

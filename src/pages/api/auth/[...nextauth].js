@@ -16,7 +16,7 @@ export const authOptions = {
   ],
 
   pages: {
-    signIn: "http://localhost:3000/login",
+    signIn: "https://pc-builder-applications.vercel.app/login",
   },
 };
 

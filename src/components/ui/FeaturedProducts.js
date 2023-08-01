@@ -6,10 +6,9 @@ const FeaturedProducts = ({ products }) => {
   console.log(products)
   return (
     <section className="w-11/12 mx-auto py-10">
-      <h1 className="text-center text-2xl font-semibold mb-2">
+      <h1 className="text-center text-2xl font-semibold mb-8">
         Featured Products
       </h1>
-      <p className="text-center mb-8">Explore & Get Your Desired Products!</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-stretch">
         {products?.map((product, i) => (
           <div
