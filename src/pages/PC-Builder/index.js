@@ -46,7 +46,7 @@ const PCBuilder = () => {
     },
     {
       title: "Others",
-      image: "/images/others.png",
+      image: "/images/other.png",
       href: "/category/others",
     },
   ];
@@ -77,7 +77,11 @@ const PCBuilder = () => {
   };
 
   const handleCompleteBuild = () => {
-    swal("PC Build Completed!", "Your Dream PC Will Get Early Soon 💥", "success");
+    swal(
+      "PC Build Completed!",
+      "Your Dream PC Will Get Early Soon 💥",
+      "success"
+    );
     dispatch(
       clearBuilder({
         cpu: null,
@@ -98,8 +102,9 @@ const PCBuilder = () => {
       <div className="w-11/12 mx-auto pb-12 ">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="md:text-2xl text-[16px] font-semibold mb-2">Choose Products</h1>
-            <p className="md:text-[16px] text-[14px] mb-8">PC Builder - Build Your Dream PC!</p>
+            <h1 className="md:text-2xl text-[16px] font-semibold mb-8">
+            Build Your Own Computer
+            </h1>
           </div>
           {Object.entries(builderState).every(
             ([key, value]) => key === "others" || value !== null

@@ -1,12 +1,29 @@
-import Link from "next/link";
+import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4">
-      <p className="text-center">
-        &copy; 2023 PC Builder. All rights reserved.
-      </p>
-    </footer>
+    <div className="bg-violet-950 text-white py-7 px-2">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+        <div>
+          <p>Company</p>
+          <p>Our goal</p>
+          <p>What's next</p>
+          <p>Success</p>
+        </div>
+        <div>
+          <p>EMI Terms</p>
+          <p>Privacy Policy</p>
+          <p>Star Point Policy</p>
+          <p>Brands</p>
+        </div>
+        <div>
+          <p>About Us</p>
+          <p>Terms and Conditions</p>
+          <p>Blog</p>
+          <p>Online Service Support</p>
+        </div>
+      </div>
+    </div>
   );
 };
 

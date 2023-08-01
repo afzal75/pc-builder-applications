@@ -36,7 +36,7 @@ const FeaturedCategories = () => {
     },
     {
       title: "Others",
-      image: '/images/others.png',
+      image: '/images/other.png',
       href: "/categories/others",
     },
   ];
@@ -59,8 +59,8 @@ const FeaturedCategories = () => {
               <div className="text-center">
                 <Image
                   src={category?.image}
-                  width={100}
-                  height={100}
+                  width={300}
+                  height={200}
                   alt="card image"
                   className="mx-auto pt-4"
                 />

@@ -39,14 +39,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
-              <Image src="/images/logo.jpg" alt="logo" height={60} width={60} />
+              <Image src="/images/logos.jpg" alt="logo" height={60} width={60} />
             </Link>
           </div>
           <div className="flex items-center -mr-2 -my-2 md:hidden">
             <button
               onClick={() => router.push("/PC-Builder")}
               type="button"
-              className="py-2 px-4 border border-transparent text-base font-medium rounded-md text-white bg-purple-500 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 mr-6"
+              className="py-2 px-4 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 mr-6"
             >
               PC Builder
             </button>
@@ -93,7 +93,7 @@ const Navbar = () => {
             <button
               onClick={() => router.push("/PC-Builder")}
               type="button"
-              className="py-2 px-4 border border-transparent text-base font-medium rounded-md text-white bg-purple-500 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+              className="py-2 px-4 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
               PC Builder
             </button>
@@ -161,7 +161,7 @@ const Navbar = () => {
                 type="button"
                 className="py-2 px-4 text-sm font-medium text-gray-700 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
               >
-                Categories
+                CATEGORIES
               </button>
               {isMenuOpen && (
                 <div

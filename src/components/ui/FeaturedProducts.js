@@ -21,10 +21,10 @@ const FeaturedProducts = ({ products }) => {
                 <img
                   src={product?.image}
                   alt="product-img"
-                  className="h-[200px] w-[200px] mx-auto p-4"
+                  className="h-[300px] w-[300px] mx-auto p-4"
                   style={{ objectFit: "cover" }}
                 />
-                <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-semibold rounded-bl-full py-1 px-3">
+                <div className="absolute top-0 right-0 bg-red-600 text-white text-xs font-semibold rounded-bl-full py-1 px-3">
                   {product?.Category}
                 </div>
               </div>
@@ -47,7 +47,7 @@ const FeaturedProducts = ({ products }) => {
               </div>
               <p className="font-semibold text-accent">{product?.Price}</p>
             </div>
-            <div className="absolute bottom-0 left-0 bg-green-800 text-white text-xs font-semibold py-1 px-3">
+            <div className="absolute bottom-0 left-0 bg-violet-800 text-white text-xs font-semibold py-1 px-3">
               {product?.Status}
             </div>
           </div>
